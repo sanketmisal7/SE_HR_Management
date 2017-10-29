@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="VO">
+    <class name="registerVO" table="USER">
+        
+        <id name="register_id" type="int">
+            <column name="USER_ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="firstname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        
+        <property name="lastname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        
+        <property name="contactnumber" type="java.lang.String">
+            <column name="CONTACTNUMBER" />
+        </property>
+        
+        <property name="username" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+         <property name="role" type="java.lang.String">
+            <column name="ROLE" />
+        </property>
+       
+    </class>
+</hibernate-mapping>

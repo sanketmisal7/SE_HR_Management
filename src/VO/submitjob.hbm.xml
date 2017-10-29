@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping >
+    <class name="VO.submitjobVO" table="EVENT">
+        
+        <id name="event_id" type="int">
+            <column name="EVENT_ID" />
+            <generator class="increment" />
+        </id>
+        
+        <property name="eventname" type="java.lang.String">
+            <column name="EVENTNAME" />
+        </property>
+        
+        <property name="num" type="java.lang.String">
+            <column name="Num" />
+        </property>
+        
+        <property name="location" type="java.lang.String">
+            <column name="LOCATION" />
+        </property>
+        
+        <property name="jobcategory" type="java.lang.String">
+            <column name="JOBCATEGORY" />
+        </property>
+        
+        <property name="date" type="java.lang.String">
+            <column name="DATE" />
+        </property>
+        
+        <property name="day" type="java.lang.String">
+            <column name="DAY" />
+        </property>
+       <property name="starttime" type="java.lang.String">
+            <column name="STARTTIME" />
+        </property>
+        <property name="endtime" type="java.lang.String">
+            <column name="ENDTIME" />
+        </property>
+        <property name="eventdes" type="java.lang.String">
+            <column name="EVENTDES" />
+        </property>
+    </class>
+</hibernate-mapping>
